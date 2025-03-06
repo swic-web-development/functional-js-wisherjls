@@ -63,6 +63,16 @@ const backpackFullOfAmmo = [
 {item: 'energy cell units', quantity: 20, priceEach: 0.2}
 ]
 
+const tableOfAmmo = backpackFullOfAmmo.map((ammo) => {
+    return  `<tr>
+    <td>${ammo.name}</td>
+    <td>${ammo.quantity}</td>
+    <td>${ammo.priceEach}</td>
+    </tr>`
+}).join('\n') 
+
+console.log(tableOfAmmo)
+
 const calculateOrderCost = (order) => order.quantity * order.priceEach
 
 backpackFullOfAmmo.map((ammo) => {console.log(ammo)})

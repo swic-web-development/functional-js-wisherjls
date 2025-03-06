@@ -32,3 +32,26 @@ function triple(num) {
 console.log(doSomethingWithNumber(369, double))  
 console.log(doSomethingWithNumber(369, triple))
 console.log(doSomethingWithNumber(369, divideByTwo))
+
+
+
+
+// imperative loop:
+//const numbers = [1, 2, 3, 4, 5]
+//const doubledNumbers = []
+
+//for (let i = 0; i < numbers.length; i++) {
+// doubledNumbers.push(numbers[i] * 2)
+//}
+
+//console.log(doubledNumbers)
+
+//the map method:
+
+const numbers = [1, 2, 3, 4, 5]
+
+const doubledNumbers = numbers.map(function (number) {
+  return number * 2
+})
+
+console.log(doubledNumbers)
